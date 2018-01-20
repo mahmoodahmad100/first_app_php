@@ -1,0 +1,49 @@
+<?php require'inc/func.php';?>
+
+<!--header-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="descripe" content="<?php echo $s_desc; ?>" />
+<meta name="keyword" content="<?php echo $s_tags; ?>" />
+<link rel="stylesheet" type="text/css" href="../cms/thems/style.css" />
+<title><?php echo $s_name ; ?> </title>
+</head>
+<body>
+<table width="100%"> 	
+<tr>
+<div class="header"> <h2>اللوجو</h2> </div>
+<div class="navebar">
+<ul>
+<li><a href="#">الرئيسية</a></li>	
+<li><a href="#">المنتدى</a></li>	
+<li><a href="#">الاستايلات</a></li>	
+<li><a href="#">التسجيل</a></li>	
+<li><a href="#">الدخول</a></li>	
+<li><a href="#">اتصل بنا </a></li>		
+</ul>
+</div>
+</tr>
+<tr>
+<td>
+<?php
+if ($h_act=='yes'){
+    echo $h_con;
+}
+?>
+<td>
+</tr>
+</table>
+<!--header//-->	
+
+<!--right block--> 
+<table width="100%">
+<tr>	
+<td valign="top" width="33%">
+<div class="rb">   	            
+<?php require_once 'inc/r_block.php'; ?>
+</div>
+</div>
+</td>
+<!--right block//-->
